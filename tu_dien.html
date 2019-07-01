@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dictionary</title>
+</head>
+<body>
+<h3>Dictionary </h3>
+<script>
+    let words= prompt("enter your new word: ");
+    let english=["age","beer","cold","deer"];
+    let VNese=["tuổi","bia","lạnh","nai"];
+
+    //su dung "indexOf de tim ra vi tri(index) cua tuw nhap vao neu tu do co trong mang
+    // neu tu nhap vao khong co trong mang, ham se default tra ve gia tri -1
+    let a = english.indexOf(words);
+    if (a==-1) {
+        document.write("can't find this word");
+    }else{
+        document.write(english[a] + " mean: "+ VNese[a]);}
+
+</script>
+
+</body>
+</html>
